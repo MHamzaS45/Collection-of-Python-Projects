@@ -1,69 +1,117 @@
-# Messages from the Four Emperors
+# 🏛️ Messages from the Four Emperors
 
-Each of the Four Emperors—Galba, Otho, Vitellius and Vespasian—has left a message in their own palaces. Your task is to travel programmatically to each location and gather all their messages.
+**Messages from the Four Emperors** is a small text-based adventure and cryptography game written in Python, inspired by the *Year of the Four Emperors* of Ancient Rome.
+The player travels between palaces, passes guarded entrances using secret passphrases, and uncovers encrypted messages left behind by each emperor.
 
+This project blends **historical flavor**, **file-based game state**, and **classical cryptography** into a simple but intriguing console experience.
 
-You may travel only once per program run. Travel should begin by displaying the current location, followed by the process of traveling to the next location. The first location is the “start” or “Home” location on the map below.
+---
+
+## 📜 Story Overview
+
+You begin your journey at home and are tasked with visiting the palaces of four Roman emperors:
+
+1. Galba
+2. Otho
+3. Vitellius
+4. Vespasian
+
+   <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/eb028690-58f7-4173-9db5-8b067a3ad86b" />
+
+Each palace holds a hidden message. To retrieve it, you must:
+
+* Present the correct **passphrase** to the guards
+* Locate an encrypted message file
+* Decipher it using a **ROT13 Caesar cipher**
+* Preserve your progress as you move on to the next emperor
+
+Once all emperors have been visited, your journey is complete.
+
+---
+
+## 🧠 Core Concepts
+
+This project demonstrates several programming ideas:
+
+* **ROT13 encryption/decryption**
+  A simple Caesar cipher used for both passphrases and emperor messages.
+
+* **File-based persistence**
+  Player progress is stored in `player_progress.txt`, allowing the game to resume where it left off.
+
+* **State-driven gameplay**
+  Locations, progress, and messages are determined dynamically based on saved data.
+
+* **Light puzzle mechanics**
+  Encrypted filenames and messages encourage curiosity and exploration.
+
+---
+
+## 📁 Project Structure
+
+* `player_progress.txt`
+  Stores the player’s current location, next destination, and encrypted passphrase.
+
+* `*.gkg` files
+  Encrypted message files for each emperor.
+  Format:
+
+  ```
+  <location_id>_<encrypted_passphrase>.gkg
+  ```
+
+* `*.txt` files
+  Deciphered, human-readable messages generated after each visit.
+
+---
+
+## ▶️ How to Run
+
+1. Make sure you have **Python 3** installed.
+2. Place the game script and message files in the same directory.
+3. Run the script:
+
+   ```bash
+   python main.py
+   ```
+4. Follow the console narration as your journey unfolds.
+
+Progress is autosaved after each successful palace visit.
+
+---
+
+## 🏁 End Condition
+
+The game ends automatically after all four emperors have been visited and their messages decrypted.
+
+---
+
+## ✨ Notes
+
+* The project intentionally uses simple file handling and encryption for educational clarity.
+* The ROT13 cipher is symmetric—encrypting and decrypting use the same function.
+* The missing trailing comma in the `LOCATIONS` dictionary is… deliberate. Seasoned programmers know why 😉
+
+---
+
+## 📌 Purpose
+
+This is a **personal learning project**, created to practice and apply knowledge on:
+
+* Python fundamentals
+* File I/O and Handling
+* String manipulation with Cryptography 
+* Low level Game development with Python with a narrative
+* Clean, readable code.
+
+---
+
+Enjoy uncovering the secrets of the emperors as you traverse through the 4 Lands.! 📃
+
 
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/eb028690-58f7-4173-9db5-8b067a3ad86b" />
 
 
 
-Place names listed:
-
-0. home
-1. Galba's palace
-2. Otho's palace
-3. Vitellius' palace
-4. Vespasian's palace
 
 
-Create a file “player_progress.txt” and initialize it with the following details
--
-<img width="497" height="129" alt="image" src="https://github.com/user-attachments/assets/1755c5d8-5f51-4a4b-8737-dca025a2d5ba" />
-
-
-
-Player progress file explained:
-
-First row is the header row with the column names.
-Data row 1
-Current location id 0 refers to the starting point (Home).
-Next location id 1 refers to the next objective (Galba's palace).
-Passphrase ciphered (ROT13)
-Next data row
-Should be added after progress is made on it’s own new line in the same file.
-Once you have traveled to the destination, walk into the palace and shout the passphrase(print the plain version) to the guard as you enter. After entering, locate the message (open file "{NextLocationId}_{PassPhrase}.gkg") and read the content.
-
-The “.gkg” file extension in this context means that the text file content is in ciphered form. It can be deciphered back to plain text using the Ceasar Cipher (ROT13).
-
-Read the first line as ciphered text and append it to the player_progress.txt. After the first line, save the plain version of the message into "{NextLocationId}-{PlainPassPhrase}.txt".
-
-Examples of message formats:
-
-File 1
----
-<img width="837" height="340" alt="image" src="https://github.com/user-attachments/assets/c13810de-d693-43c4-9a4e-567cd3e92c61" />
-
-File 2
-----
-
-<img width="828" height="345" alt="image" src="https://github.com/user-attachments/assets/8295ffe9-e98f-4dbb-91d1-7e2f88b2c3c1" />
-
-
-
-
-After the progress and the Emperor’s message have been saved, the program closes with the final phrases. The next time the program runs, it should be able to read the previous progress from player_progress.txt and continue the next turn.
-
-Example program runs:
-
-<img width="706" height="389" alt="image" src="https://github.com/user-attachments/assets/64fa53f9-c3d6-45e8-890a-dda60f7eb953" />
-
-
-
-
-
-How to run this file
--
-1. Execute script as usual: python Messages from the Four Emperors/main.py
-2. If a task defines functions intended to be imported, you can also run them from an interactive session or a small driver script. 
