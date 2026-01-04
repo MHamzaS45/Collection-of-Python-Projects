@@ -1,0 +1,2 @@
+# Python-Featured-Projects-
+A list of featured projects completed in Python:  1. Messages from the Four Emperors   2. Rock, Paper and Scissors  3. Minesweeper.  4. Weather Report (UNDER CONSTRUCTION)
