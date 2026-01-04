@@ -10,7 +10,7 @@ pygame.mixer.init()
 
 # create the app window
 root = tk.Tk()
-root.title("Weather Report App")
+root.title("Weather Report for Python") # What the application will be referred to as when booting
 root.geometry("500x500")
 root.configure(bg="#1f2024")
 
@@ -61,5 +61,3 @@ get_weather_button.pack(pady=10)
 # finalize the design
 root.mainloop()
 ```
-
-Note that you need to replace "YOUR_API_KEY" with your own API key from OpenWeatherMap. Also, the `on_click` function in the mini-game section is currently empty and needs to be implemented with the animation logic.
