@@ -1,4 +1,4 @@
-# A6_T7 Messages from the Four Emperors
+# Messages from the Four Emperors
 
 Each of the Four Emperors—Galba, Otho, Vitellius and Vespasian—has left a message in their own palaces. Your task is to travel programmatically to each location and gather all their messages.
 
