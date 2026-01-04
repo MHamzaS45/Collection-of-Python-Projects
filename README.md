@@ -7,3 +7,5 @@ A list of featured projects done in Python:
 2.   Rock, Paper and Scissors
 3.   Minesweeper.
 4.   Weather Report (UNDER CONSTRUCTION)
+
+More details of these can be found in their respective folders 
