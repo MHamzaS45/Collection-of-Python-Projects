@@ -102,7 +102,7 @@ This is a **personal learning project**, created to practice and apply knowledge
 * File I/O and Handling
 * String manipulation with Cryptography 
 * Low level Game development with Python with a narrative
-* Clean, readable code.
+* Clean, readable code that is understood. 
 
 ---
 
