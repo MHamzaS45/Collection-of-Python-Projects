@@ -1,5 +1,4 @@
 # A6_T7 Messages from the Four Emperors
-A Python Project in VS Code
 
 Each of the Four Emperors—Galba, Otho, Vitellius and Vespasian—has left a message in their own palaces. Your task is to travel programmatically to each location and gather all their messages.
 
@@ -60,3 +59,11 @@ Example program runs:
 
 <img width="706" height="389" alt="image" src="https://github.com/user-attachments/assets/64fa53f9-c3d6-45e8-890a-dda60f7eb953" />
 
+
+
+
+
+How to run this file
+-
+1. Execute script as usual: python Messages from the Four Emperors/main.py
+2. If a task defines functions intended to be imported, you can also run them from an interactive session or a small driver script. 
