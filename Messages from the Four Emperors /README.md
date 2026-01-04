@@ -107,11 +107,3 @@ This is a **personal learning project**, created to practice and apply knowledge
 ---
 
 Enjoy uncovering the secrets of the emperors as you traverse through the 4 Lands.! 📃
-
-
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/eb028690-58f7-4173-9db5-8b067a3ad86b" />
-
-
-
-
-
