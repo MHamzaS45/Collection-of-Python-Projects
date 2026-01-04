@@ -1,5 +1,5 @@
 # Collection-of-Python-Projects
--
+
 
 A list of featured projects done in Python: 
 
