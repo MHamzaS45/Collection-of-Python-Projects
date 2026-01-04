@@ -1,9 +1,8 @@
 # 🏛️ Messages from the Four Emperors
 
-**Messages from the Four Emperors** is a small text-based adventure and cryptography game written in Python, inspired by the *Year of the Four Emperors* of Ancient Rome.
-The player travels between palaces, passes guarded entrances using secret passphrases, and uncovers encrypted messages left behind by each emperor.
+**Messages from the Four Emperors** is a small text-based adventure and cryptography, in vein of games like **Adventureland**, **Zork**, written in Python. The setting is inspired by the historial *Year of the Four Emperors* period of Ancient Rome. The player travels between palaces, passes guarded entrances using secret passphrases, and uncovers encrypted messages left behind by each emperor.
 
-This project blends **historical flavor**, **file-based game state**, and **classical cryptography** into a simple but intriguing console experience.
+This project blends **historical flavor**, **file-based game state**, and **classical cryptography** into a simple but also an intriguing console experience.
 
 ---
 
@@ -25,7 +24,7 @@ Each palace holds a hidden message. To retrieve it, you must:
 * Decipher it using a **ROT13 Caesar cipher**
 * Preserve your progress as you move on to the next emperor
 
-Once all emperors have been visited, your journey is complete.
+Once all emperors have been visited, only then will the journey be considered complete.
 
 ---
 
