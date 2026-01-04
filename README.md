@@ -1,4 +1,6 @@
-# Python-Featured-Projects-
+# Collection-of-Python-Projects
+--
+
 A list of featured projects done in Python: 
 
 1.   Messages from the Four Emperors
