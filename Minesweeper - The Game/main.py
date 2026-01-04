@@ -1,3 +1,8 @@
+# ALERT! This task is still under construction. Expect it to be expanded into a larger project in the near future.
+# Comment close
+#######################################################
+
+# Main syntax
 import random
 random.seed(1234)
 
