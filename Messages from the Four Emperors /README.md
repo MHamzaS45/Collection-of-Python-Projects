@@ -83,19 +83,10 @@ Progress is autosaved after each successful palace visit.
 
 The game ends automatically after all four emperors have been visited and their messages decrypted.
 
----
-
-## ✨ Notes
-
-* The project intentionally uses simple file handling and encryption for educational clarity.
-* The ROT13 cipher is symmetric—encrypting and decrypting use the same function.
-* The missing trailing comma in the `LOCATIONS` dictionary is there. Seasoned programmers know why 😉
-
----
 
 ## 📌 Purpose
 
-This is a **personal learning project**, created to practice and apply knowledge on:
+This is a **learning project**, created to practice and apply knowledge on:
 
 * Python fundamentals
 * File I/O and Handling
