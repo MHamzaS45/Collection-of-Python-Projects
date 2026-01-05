@@ -89,7 +89,7 @@ The game ends automatically after all four emperors have been visited and their 
 
 * The project intentionally uses simple file handling and encryption for educational clarity.
 * The ROT13 cipher is symmetric—encrypting and decrypting use the same function.
-* The missing trailing comma in the `LOCATIONS` dictionary is… deliberate. Seasoned programmers know why 😉
+* The missing trailing comma in the `LOCATIONS` dictionary is there. Seasoned programmers know why 😉
 
 ---
 
